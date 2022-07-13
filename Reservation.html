@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+  background-image:url(coffee5.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+input[type=text], select {
+  width: 95%;
+  padding: 15px 20px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:black;
+}
+
+div {
+  border-radius: 5px;
+  width: 45%;
+  height: 85%;
+  padding-left: 25px;
+  margin:25px 425px;
+  float: left;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  background-color: #EFCFA0;
+  opacity: 0.8;
+  color: black;
+}
+
+</style>
+<body>
+<center>
+<h1 style="font-size:300%" ><u>Reservation</u></h1>
+<p style="font-size:150%">Please fill the form for the reservation</p></center>
+
+<div><center>
+  <form action="submit.html">
+    <label for="fname" style="font-size:150%">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"  style="font-size:150%">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Slots"style="font-size:150%">Slots</label>
+    <select id="Slots" name="Slots">
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div></center>
+
+</body>
+</html>
